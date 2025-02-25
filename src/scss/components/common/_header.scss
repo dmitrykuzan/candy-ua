@@ -1,4 +1,7 @@
 .header {
+  min-height: 7rem;
+  background-color: var(--clr-default-100);
+
   &__wrapper {
     display: flex;
     align-items: center;

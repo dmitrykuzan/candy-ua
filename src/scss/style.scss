@@ -23,7 +23,7 @@ $containerWidth: 120rem;
 
 :root {
   // base
-  --font-family: "", sans-serif;
+  --font-family: "ProximaNova", sans-serif;
   --font-weight: 400;
   --content-width: 117rem;
   --container-offset: 1.5rem;
@@ -32,8 +32,21 @@ $containerWidth: 120rem;
 
   // colors
   --clr-default-100: #fff;
-  --clr-default-400: #181818;
+  --clr-default-150: #ededf0;
+  --clr-default-180: #e5e5e5;
+  --clr-default-200: #ebedee;
+  --clr-default-250: #f7ebe5;
+  --clr-default-400: #292929;
+  --clr-default-400: rgba(41, 41, 41, 0.8);
+  --clr-default-400: #2b1414;
   --clr-default-900: #000;
+
+  --clr-accent-300: #ff4d6d;
+  --clr-accent-400: #e7426a;
+  --clr-accent-500: #8cc4ec;
+  --clr-accent-600: #4e9dd3;
+
+  --clr-bg-main: #f7f7f7;
 }
 
 // </ПЕРЕМЕННЫЕ>==============================================================
@@ -42,6 +55,7 @@ $containerWidth: 120rem;
 body {
   font-size: 1.6rem;
   color: var(--clr-default-400);
+  background-color: var(--clr-bg-main);
 
   &.lock {
     overflow: hidden;

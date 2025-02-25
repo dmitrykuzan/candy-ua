@@ -1,0 +1,16 @@
+.logo {
+  position: relative;
+  border-radius: 1rem;
+  width: 13rem;
+  height: 4.5rem;
+  background-color: var(--clr-accent-300);
+
+  &::before {
+    content: "LOGO";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+}

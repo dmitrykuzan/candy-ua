@@ -13,6 +13,11 @@ $burgerMQ: em(992);
   }
 
   &__item {
+    a {
+      text-transform: uppercase;
+      color: var(--clr-default-400);
+    }
+
     &:not(:last-child) {
       margin-right: 1.5rem;
 
