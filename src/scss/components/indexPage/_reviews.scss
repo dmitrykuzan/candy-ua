@@ -1,0 +1,95 @@
+.reviews {
+  padding-top: 8rem;
+
+  &__wrapper {
+    gap: 4.2rem;
+
+    @media (max-width: em(1023)) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @media (max-width: em(1023)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(767)) {
+      display: flex;
+      overflow-x: scroll;
+      margin-left: -1.5rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      width: calc(100% + 3rem);
+      gap: 2rem;
+    }
+  }
+
+  &__item {
+    border: 0.1rem solid var(--clr-default-150);
+    border-radius: 0.5rem;
+    background-color: var(--clr-default-100);
+    gap: 1rem;
+
+    &-text {
+      padding-top: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1rem;
+      padding-left: 1.5rem;
+      gap: 1rem;
+
+      h3 {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 133%;
+      }
+
+      p {
+        line-height: 133%;
+        color: var(--clr-default-450);
+      }
+    }
+
+    &-user {
+      justify-content: flex-end;
+      margin-top: auto;
+      margin-left: auto;
+      border-top: 0.1rem solid var(--clr-default-150);
+      padding-top: 1rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1rem;
+      padding-left: 1.5rem;
+      width: 100%;
+    }
+
+    &-author {
+      gap: 1.5rem;
+    }
+
+    &-name {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+
+    &-image {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+
+    @media (max-width: em(767)) {
+      min-width: 30rem;
+    }
+  }
+
+  @media (max-width: em(1023)) {
+    padding-top: 5rem;
+  }
+}

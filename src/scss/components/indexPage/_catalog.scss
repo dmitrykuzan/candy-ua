@@ -1,0 +1,124 @@
+.catalog {
+  padding-top: 8rem;
+
+  &__wrapper {
+    gap: 4.2rem;
+
+    @media (max-width: em(1023)) {
+      gap: 2.2rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @media (max-width: em(1023)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(767)) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid var(--clr-default-150);
+    border-radius: 0.5rem;
+    background-color: var(--clr-default-100);
+    gap: 1.8rem;
+
+    &-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      gap: 0.8rem;
+
+      h4 {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 133%;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 133%;
+        color: var(--clr-default-450);
+      }
+    }
+
+    &-nav {
+      border-top: 0.1rem solid var(--clr-default-150);
+      padding-left: 2rem;
+      min-height: 5rem;
+    }
+
+    &-price {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--clr-accent-400);
+    }
+
+    &-button {
+      border-left: 0.1rem solid var(--clr-default-150);
+      padding-right: 2.3rem;
+      padding-left: 2.3rem;
+      height: 100%;
+      gap: 1.2rem;
+
+      .icon {
+        display: flex;
+        width: 1.4rem;
+        height: 2rem;
+
+        svg {
+          stroke: var(--clr-default-900);
+          transition: stroke var(--transition);
+        }
+      }
+
+      .text {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 133%;
+        transition: color var(--transition);
+      }
+
+      @media (hover) {
+        &:hover {
+          .icon svg {
+            stroke: var(--clr-accent-400);
+          }
+
+          .text {
+            color: var(--clr-accent-400);
+          }
+        }
+      }
+    }
+
+    @media (max-width: em(767)) {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 37rem;
+    }
+  }
+
+  @media (max-width: em(1023)) {
+    padding-top: 5rem;
+  }
+}

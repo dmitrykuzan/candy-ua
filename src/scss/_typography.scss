@@ -1,10 +1,12 @@
 .typography {
   &.h1 {
-    font-size: fluid-font(4.2rem, 2rem);
+    font-family: Montserrat;
+    font-size: fluid-font(4.2rem, 2.4rem);
   }
 
   &.h2 {
-    font-size: fluid-font(5.2rem, 2.4rem);
+    font-family: Montserrat;
+    font-size: fluid-font(3.4rem, 2rem);
   }
 
   &.h3 {

@@ -37,8 +37,8 @@ $containerWidth: 120rem;
   --clr-default-200: #ebedee;
   --clr-default-250: #f7ebe5;
   --clr-default-400: #292929;
-  --clr-default-400: rgba(41, 41, 41, 0.8);
-  --clr-default-400: #2b1414;
+  --clr-default-450: rgba(41, 41, 41, 0.8);
+  --clr-default-500: #2b1414;
   --clr-default-900: #000;
 
   --clr-accent-300: #ff4d6d;
@@ -112,6 +112,10 @@ main {
   max-width: var(--container-width);
 }
 
+//Libs
+@import "./libs/swiper";
+//Libs
+
 // Components - UI
 @import "./ui";
 @import "./stack";
@@ -134,6 +138,9 @@ main {
 
 // Components - Pages
 @import "./components/indexPage/hero";
+@import "./components/indexPage/catalog";
+@import "./components/indexPage/product";
+@import "./components/indexPage/reviews";
 
 // Components - Pages
 
