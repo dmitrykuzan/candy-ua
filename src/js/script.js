@@ -4,7 +4,7 @@
 import "./_vendor";
 
 // Functions
-import { burger, dynamicAdaptive, mobileCheck } from "./functions/";
+import { accordion, burger, dynamicAdaptive, mobileCheck } from "./functions/";
 
 // Components
 import { productSlider } from "./components";
@@ -14,4 +14,5 @@ window.addEventListener("DOMContentLoaded", () => {
   burger();
   productSlider();
   dynamicAdaptive();
+  accordion(".faq__list", "faq__item-title", ".faq__item", "active");
 });

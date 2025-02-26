@@ -1,5 +1,132 @@
 .footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: var(--clr-default-200);
+
   &__wrapper {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media (max-width: em(960)) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+  }
+
+  &__column {
+    gap: 2rem;
+  }
+
+  &__benefits {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__benefit {
+    max-width: 10rem;
+    gap: 1rem;
+
+    &-text {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 122%;
+      text-align: center;
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: em(960)) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &-item {
+      position: relative;
+
+      a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: var(--clr-default-500);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.4rem;
+        width: 0;
+        height: 0.2rem;
+        background-color: var(--clr-accent-400);
+        transition: width var(--transition);
+      }
+
+      @media (hover) {
+        &:hover::before {
+          width: 100%;
+          transition: width var(--transition);
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+
+        @media (max-width: em(960)) {
+          margin-right: initial;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    gap: 1.5rem;
+  }
+
+  &__location {
+    gap: 0.5rem;
+  }
+
+  &__email {
+    color: var(--clr-default-400);
+    transition: color var(--transition);
+
+    @media (hover) {
+      &:hover {
+        color: var(--clr-accent-600);
+      }
+    }
+  }
+
+  &__socials {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__social {
+    border: 0.1rem solid transparent;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--clr-default-100);
+    transition: border var(--transition);
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (hover) {
+      &:hover {
+        border: 0.1rem solid var(--clr-accent-600);
+      }
+    }
   }
 }
