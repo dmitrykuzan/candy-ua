@@ -22,4 +22,18 @@ window.addEventListener("DOMContentLoaded", () => {
   modals();
   dynamicAdaptive();
   accordion(".faq__list", "faq__item-title", ".faq__item", "active");
+
+  let fsLightboxLoaded = false;
+
+  document.querySelectorAll(".gallery__link").forEach((link) => {
+    link.addEventListener("click", async (event) => {
+      if (!fsLightboxLoaded) {
+        event.preventDefault();
+        await import("fslightbox");
+        fsLightboxLoaded = true;
+        link.click();
+        console.log("trueee");
+      }
+    });
+  });
 });
