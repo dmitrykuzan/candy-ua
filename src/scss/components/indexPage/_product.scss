@@ -2,7 +2,37 @@
   padding-top: 8rem;
 
   &__wrapper {
+    position: relative;
     gap: 4rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 50%;
+      filter: blur(4rem);
+
+      @media (max-width: em(1023)) {
+        display: none;
+      }
+    }
+
+    &::before {
+      right: -23rem;
+      top: -7rem;
+      width: 44rem;
+      height: 44rem;
+      background-color: rgba(181, 215, 255, 0.6);
+    }
+
+    &::after {
+      right: -21rem;
+      top: 32rem;
+      width: 44rem;
+      height: 44rem;
+      background-color: rgba(255, 252, 189, 0.5);
+    }
 
     @media (max-width: em(1023)) {
       gap: 3rem;

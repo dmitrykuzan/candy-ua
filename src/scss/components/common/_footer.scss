@@ -37,6 +37,10 @@
     }
   }
 
+  &__payments {
+    gap: 0.6rem;
+  }
+
   &__menu {
     &-list {
       display: flex;
