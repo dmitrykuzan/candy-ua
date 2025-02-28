@@ -26,6 +26,7 @@
     border: 0.1rem solid var(--clr-default-150);
     border-radius: 0.5rem;
     height: max-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     background-color: var(--clr-default-100);
     transition: padding-bottom var(--transition), border var(--transition);
 
