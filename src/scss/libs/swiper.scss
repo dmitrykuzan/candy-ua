@@ -110,3 +110,8 @@
     scroll-snap-align: center center;
   }
 }
+.swiper-grid > .swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr;
+}
