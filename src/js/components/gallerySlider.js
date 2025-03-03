@@ -8,7 +8,7 @@ export const gallerySlider = () => {
 
     breakpoints: {
       767: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 20,
 
         grid: {

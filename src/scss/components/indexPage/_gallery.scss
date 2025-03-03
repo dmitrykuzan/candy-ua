@@ -11,6 +11,12 @@
 
   &__slider {
     width: 100%;
+
+    .product__pagination {
+      @media (max-width: em(767)) {
+        display: none;
+      }
+    }
   }
 
   &__list {
