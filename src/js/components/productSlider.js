@@ -2,6 +2,7 @@ export const productSlider = () => {
   let productSlider = new Swiper(".product__slider", {
     slidesPerView: 1,
     spaceBetween: 40,
+    autoHeight: true,
     // centeredSlides: true,
 
     navigation: {

@@ -449,7 +449,7 @@ const images = () => {
 // Конвертация картинок в webp
 const webpImages = () => {
   return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`])
-    .pipe(webp())
+    .pipe(webp({ metadata: "all" }))
     .pipe(dest(paths.buildImgFolder));
 };
 
