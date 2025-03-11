@@ -6,7 +6,7 @@
 
     @media (max-width: em(1160)) {
       flex-direction: column-reverse;
-      gap: 3rem;
+      gap: initial;
     }
   }
 
@@ -14,7 +14,7 @@
     position: relative;
     flex-shrink: 0;
     width: 100%;
-    height: 55rem;
+    height: 70rem;
     max-width: 55rem;
 
     img {
@@ -50,6 +50,11 @@
       right: 39rem;
       top: -4rem;
       background-color: rgba(255, 168, 241, 0.37);
+    }
+
+    @media (max-width: em(575)) {
+      margin-left: -1.5rem;
+      width: calc(100% + 4.5rem);
     }
   }
 
@@ -140,6 +145,7 @@
 
     @media (max-width: em(1023)) {
       display: block;
+      margin-top: 1rem;
     }
 
     @media (max-width: em(767)) {
