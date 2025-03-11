@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 8rem;
+  padding-top: 15rem;
 
   &__wrapper {
     gap: 4.2rem;
@@ -29,6 +29,7 @@
     flex-direction: column;
     border: 0.1rem solid var(--clr-default-150);
     border-radius: 0.5rem;
+    padding-top: 1rem;
     width: 100%;
     box-shadow: 0 10px 51px rgba(0, 0, 0, 0.1), 0 4px 19px rgba(0, 0, 0, 0.2);
     background-color: var(--clr-default-100);
@@ -37,7 +38,7 @@
     &-image {
       position: relative;
       padding-bottom: 65%;
-      min-height: 36rem;
+      min-height: 30rem;
 
       img {
         position: absolute;
@@ -133,6 +134,10 @@
   }
 
   @media (max-width: em(1023)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(757)) {
     padding-top: 5rem;
   }
 }

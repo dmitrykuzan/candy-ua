@@ -1,5 +1,5 @@
 .product {
-  padding-top: 8rem;
+  padding-top: 15rem;
 
   &__wrapper {
     position: relative;
@@ -202,6 +202,10 @@
   }
 
   @media (max-width: em(1023)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(757)) {
     padding-top: 5rem;
   }
 }
