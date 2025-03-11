@@ -1,6 +1,12 @@
 .catalog {
   padding-top: 15rem;
 
+  &__title {
+    span {
+      color: var(--clr-accent-400);
+    }
+  }
+
   &__wrapper {
     gap: 4.2rem;
 

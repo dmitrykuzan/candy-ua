@@ -1,6 +1,12 @@
 .product {
   padding-top: 15rem;
 
+  &__title {
+    span {
+      color: var(--clr-accent-600);
+    }
+  }
+
   &__wrapper {
     position: relative;
     gap: 4rem;
@@ -66,6 +72,10 @@
       h3 {
         font-family: Montserrat;
         font-size: fluid-font(2.8rem, 1.8rem);
+
+        span {
+          color: var(--clr-accent-400);
+        }
       }
     }
 
@@ -73,8 +83,9 @@
       gap: 0.5rem;
 
       p {
-        font-size: 1.4rem;
-        line-height: 133%;
+        font-size: 1.6rem;
+        line-height: 166%;
+        color: var(--clr-default-450);
       }
     }
 
