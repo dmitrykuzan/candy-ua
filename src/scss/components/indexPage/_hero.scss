@@ -22,6 +22,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+
+      @media (max-width: em(575)) {
+        object-fit: contain;
+      }
     }
 
     &::before,
@@ -55,6 +59,7 @@
     @media (max-width: em(575)) {
       margin-left: -1.5rem;
       width: calc(100% + 4.5rem);
+      height: 50rem;
     }
   }
 
@@ -145,7 +150,7 @@
 
     @media (max-width: em(1023)) {
       display: block;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     @media (max-width: em(767)) {
